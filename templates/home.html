@@ -1,0 +1,121 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+            <!-- Header-->
+            <header class="bg-dark py-5">
+                <div class="container px-5">
+                    <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                            <div class="my-5 text-center text-xl-start">
+                                <h1 class="display-5 fw-bolder text-white mb-2">Automatic Helmet Detection in Videos,Images and Webcam</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">Deep Learning based safety Helmet Detection based on Convolutional Neural Network</p>
+                                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+{#                                    <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>#}
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/image">Image</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/video">Video</a>
+                                    <a class="btn btn-outline-light btn-lg px-4" href="/webcam">Webcam</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5" src="{% static 'img/static_img1.png' %}" alt="..." /></div>
+                    </div>
+                </div>
+            </header>
+
+     <section class="py-5" id="features">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 mb-5 mb-lg-0"><h2 class="fw-bolder mb-0">TOOLS REQUIRED</h2><br>
+                             </div>
+
+                        <div class="col-lg-8">
+                            <div class="row gx-5 row-cols-1 row-cols-md-2">
+
+                                <div class="col mb-5 h-100">
+
+                                    <h2 class="h5">YOLOv5</h2>
+                                    <p class="mb-0">YOLO an Acronym for 'You Only Look Once' is an Object Detection Algorithm based on regression that divides images into Grid System, instead of selecting the interesting part of an image it predicts classes and bounding boxes for an image in one run of the algorithm.</p>
+                                </div>
+
+                                <div class="col mb-5 h-100">
+
+                                    <h2 class="h5">PYTORCH</h2>
+                                    <p class="mb-0"> PyTorch is defined as an open-source machine learning library for Python.It is used for applications such as natural language processing.</p>
+                                </div>
+                                <div class="col mb-5 h-100">
+
+                                    <h2 class="h5">LABELIMG</h2>
+                                    <p class="mb-0">LabelImg is a free, open-source tool for graphically labelling images.</p>
+                                </div>
+                                <div class="col mb-5 mb-md-0 h-100">
+
+                                    <h2 class="h5">ROBOFLOW</h2>
+                                    <p class="mb-0">Roboflow provides all of the tools you need to convert raw images into a custom trained computer vision model and deploy it for use in your applications.</p>
+                                </div>
+                                <div class="col h-100">
+
+                                    <h2 class="h5">GOOGLE COLAB</h2>
+                                    <p class="mb-0">Google Colab is a powerful platform for learning and quickly developing machine learning models in Python.</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                <header class="bg-light">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5">
+                                <h1 class="fw-bolder mb-3">Our Main Objective</h1>
+                                <p class="lead fw-normal text-muted mb-4">According to the latest report of ‘Global Road Safety Status in 2018’ released by the World Health Organization (WHO) , about 1.35 million people die in road traffic accidents every year, among which 28% are motorcyclists.The  purpose of this project is to create an helmet detection model which identifies helmets in surveillance videos.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+    <section class="py-5 ">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="fw-bolder">Our team</h2>
+
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Devaprasad N.M</h5>
+
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Hana Noorudheen</h5>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Linda Rose Jimson</h5>
+
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Mohammed Jafrin</h5>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+   {% endblock %}
